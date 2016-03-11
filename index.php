@@ -54,7 +54,7 @@
 				<td class="light-gray">Donec Diam Risus</td><td class="light-blue">Ehicula Imperdiet</td>
 			</tr>
 			<tr>
-				<td class="light-blue"><span>CBC News</span></td><td class="light-gray">Ehicula Imperdiet</td>
+				<td class="light-blue"><span>ESPN</span></td><td class="light-gray">Ehicula Imperdiet</td>
 				<td class="light-blue">Donec Diam Risus</td><td class="light-gray">Ehicula Imperdiet</td>
 			</tr>
 			<tr>
