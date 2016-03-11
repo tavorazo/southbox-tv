@@ -41,7 +41,7 @@
 
 <section class="tv" id="tv">
 	<div class="column2 left">
-		<iframe src="http://www.filmon.tv/tv/channel/export?channel_id=1672&autoPlay=1&affid=194909Yq" allowfullscreen ></iframe>
+		<iframe src="http://www.filmon.tv/tv/channel/export?channel_id=299&autoPlay=1"></iframe>
 	</div>
 		<div class="column2 right">
 		<table>
