@@ -1,0 +1,65 @@
+/*GENERAL*/
+body{ width:100%; left:0; margin:0; top:0; font-family: 'Open sans', 'Montserrat', 'Avenir', 'Lato', Arial !important; color:#2E2E2E;}
+header, footer, section{ width:100%;  overflow:hidden; margin-top:0; height:auto;  }
+.container{ padding:100px 0; min-height:200px; width:1000px; height:auto; /*border-bottom:1px #FFf solid;*/ margin:auto;  }
+.content{ position:relative; margin:auto; }
+a{ text-decoration:none; color:#fff; }
+p{ line-height:35px; letter-spacing:0px;}
+h1{ font-weight:500;   font-size:65px; margin-top:25px;letter-spacing:-2px;}
+h2{  padding-top:50px; width:65%; margin:auto; font-weight:300;}
+span{  font-weight:600; }
+li{ list-style-type: none; }
+table {width: 100%;}
+td,th{height: 40px;}
+td{font-size: 13px; padding-left: 10px;}
+
+/****colores****/
+.text-white{ color:white; }
+.white{ background-color: white ; }
+.purple{background-color: #223845;}
+.light-gray{background-color: #EFEFEF;}
+.light-blue{background-color: #DDDFFF;}
+
+/**** left/right ****/
+.text-right { text-align: right; }
+.text-center{text-align: center;}
+.left{ width:50%; position: relative; left: 0; float: left; }
+.right{ width:49.5%; position: relative; right: 0; float: right;}
+
+/**** Columnas ****/
+.column2{width: 50%; }
+.column4{width: 14.5%; float: left; padding: 0 5%; min-height: 300px;}
+
+/****Borders****/
+.border-right{border-right: solid 1px white;}
+.border-bottom{border-bottom:solid 3px #223845;}
+.border-white{border:solid 1px white; border-radius: 5px;}
+
+/****Forms****/
+button{border:none; padding: 6px;}
+input {padding: 5px; }
+
+/**Header*/
+header menu {margin: 0;}
+header menu .menu-logo{width: 10%; float:left;}
+header menu .menu-search{width: 30%; float:left; margin: 5px 0;}
+header menu .menu-search input{min-width: 350px; text-align: right; }
+header menu .menu-options{width: 50%; float: right; max-height: 40px;}
+header menu .menu-options ul{margin: 5px;}
+header menu .menu-options li{display: inline-block;}
+
+
+/*TV*/
+#tv {min-height: 350px;}
+#tv iframe{width: 100%; min-height: 350px;}
+
+footer{ background-color:#223845; color: white;}
+footer .cols{min-height: 300px; padding: 20px 0;}
+footer .firma{background-color: #42405D; padding: 30px; max-height: 80px;}
+
+
+/*Responsive*/
+@media only screen and (max-width: 850px){
+	.column2{width: 100%;}
+	.column4{width: 80%; padding: 0 10%; text-align: center;}
+}
