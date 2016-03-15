@@ -143,22 +143,21 @@
 	<section id="corousel">
 		<div class="container">
 			<h2>Canales de peliculas</h2>
-			<slick infinite="true" slides-to-show="4" slides-to-scroll="1">
-	  			
+	  		<slick lazy-load="ondemand" slides-to-show="4" slides-to-scroll="1">
 	 			<div class="channel">
-	  				<img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Hallmark_Movie_Channel.svg/800px-Hallmark_Movie_Channel.svg.png" alt="">
+	  				<img data-lazy="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Hallmark_Movie_Channel.svg/800px-Hallmark_Movie_Channel.svg.png" alt="">
 	  			</div>
 	  			<div class="channel">
-	  				<img src="http://cdn.24.co.za/files/Cms/General/d/1546/660448aa6b5e4b0dbb5ba6b37380e4ae.jpg" alt="">
+	  				<img data-lazy="http://cdn.24.co.za/files/Cms/General/d/1546/660448aa6b5e4b0dbb5ba6b37380e4ae.jpg" alt="">
 	  			</div>
 	  			<div class="channel">
-	  				<img src="http://www.blackfilm.com/read/wp-content/uploads/2014/12/Urban-Movie-Channel-logo.jpg" alt="">
+	  				<img data-lazy="http://www.blackfilm.com/read/wp-content/uploads/2014/12/Urban-Movie-Channel-logo.jpg" alt="">
 	  			</div>
 	  			<div class="channel">
-	  				<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEzes0Xy4U0xBQMW9kF5_XqWJkTy0h_5Ht9QrSFNZXapteVx8M" alt="">
+	  				<img data-lazy="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEzes0Xy4U0xBQMW9kF5_XqWJkTy0h_5Ht9QrSFNZXapteVx8M" alt="">
 	  			</div>
 	  			<div class="channel">
-	  				<img src="http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/3b/75/3b75b9ee0d309c224fdac377ed6bfb2d.png?itok=UH4-D51Z" alt="">
+	  				<img data-lazy="http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/3b/75/3b75b9ee0d309c224fdac377ed6bfb2d.png?itok=UH4-D51Z" alt="">
 	  			</div>
 			</slick>
 		</div>
@@ -219,7 +218,7 @@
 			</p>
 		</div>
 	</div>
-	<div class="firma"><p>Todos los derechos reservados  <a href="#" title="">Southboxtv</a>. | Created by <a href="htp://tavorazo.github.io" title="">Octavio Razo</a></p></div>
+	<div class="firma"><p>Todos los derechos reservados  <a href="#" title="">Southboxtv</a>. | Created by <a href="htp://tavorazo.github.io" title=""> --- </a></p></div>
 </footer>
 <!-- end footer section -->
 
