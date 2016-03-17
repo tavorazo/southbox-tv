@@ -70,8 +70,6 @@ main{ min-height: 1000px;}
 /* corouseles */
 #corousel{ background:none; border-bottom:1px solid #e3e3e3; }
 #corousel img{ display:block; max-width:200px; min-width:60px; width:auto; border:1px solid #e3e3e3; height:100px; cursor:pointer; }
-.channel{width: 200px !important;}
-.channel>img{margin: auto;}
 
 #download img{ width:200px; display:block; margin: 60px auto 0; }
 
