@@ -187,8 +187,8 @@
 		<div class="column4 border-right">
 			<p class="strong">WEB APP</p>
 			<li><a href="#">Mi tv</a></li>
-			<li><a href="#">Sports Channels</a></li>
-			<li><a href="#">Movie Channels</a></li>
+			<li><a href="#">Canales deportivos</a></li>
+			<li><a href="#">Canales de películas</a></li>
 			<li><a href="#">Lorem Ipsum</a></li>
 			<li><a href="#">Nulla facilis</a></li>
 		</div>
@@ -209,12 +209,16 @@
 		</div>
 		<div class="column4">
 			<p class="strong">CONTACTO</p>
-			<p>Nombre (obligatorio)
-				<input type="text">
-				Correo (obligatorio)
-				<input type="mail">
-				Comentario
+			<p>Nombre *<br>
+				<input type="text"><br>
+				Apellidos *<br>
+				<input type="text"><br>
+				Correo *<br>
+				<input type="mail"><br>
+				Comentario<br>
 				<textarea></textarea>
+				<br>
+				<small>*campo obligatorio</small>
 			</p>
 		</div>
 	</div>

@@ -6,7 +6,7 @@ header, footer, section{ width:100%;  overflow:hidden; margin-top:0; height:auto
 a{ text-decoration:none; color:#fff; font-size: 13px; }
 p{ line-height:35px; letter-spacing:0px; font-size: 13px;}
 h1{ font-weight:500;   font-size:65px; margin-top:25px;letter-spacing:-2px;}
-h2{  padding:50px 0; font-weight:900;}
+h2{font-weight:900;}
 span{  font-weight:600; }
 li{ list-style-type: none; }
 table {width: 100%;}
@@ -31,11 +31,11 @@ td{font-size: 13px; padding-left: 10px;}
 
 /**** Columnas ****/
 .column2{width: 50%; float:left;  }
-.column4{width: 14.5%; float: left; padding: 0 5%; min-height: 300px;}
+.column4{width: 14.5%; float: left; padding: 0 5%; min-height: 380px;}
 
 
 /****Botones****/
-.btn2{ margin-top:-10px; padding-right: 20px;}
+.btn2{ margin-top:-10px; padding-right: 20px; font-size: 16px;}
 .btn2:hover{ color:#EE5F00; }
 
 
@@ -70,11 +70,13 @@ main{ min-height: 1000px;}
 /* corouseles */
 #corousel{ background:none; border-bottom:1px solid #e3e3e3; }
 #corousel img{ display:block; max-width:200px; min-width:60px; width:auto; border:1px solid #e3e3e3; height:100px; cursor:pointer; }
+.channel{width: 200px !important;}
+.channel>img{margin: auto;}
 
 #download img{ width:200px; display:block; margin: 60px auto 0; }
 
 footer{ background-color:#223845; color: white;}
-footer .cols{min-height: 300px; padding: 20px 0;}
+footer .cols{min-height: 400px; padding: 20px 0;}
 footer .firma{background-color: #42405D; padding: 30px; max-height: 80px;}
 footer .firma p, footer .firma a{ font-size: 10px;}
 footer .firma a{ font-weight: 900;}
