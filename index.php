@@ -56,7 +56,7 @@
 <main >
 	<section class="tv" id="tv" >
 		<div class="column2 left">
-			<iframe src="http://www.filmon.tv/tv/channel/export?channel_id=299&autoPlay=1"></iframe>
+			<!-- <iframe src="http://www.filmon.tv/tv/channel/export?channel_id=299&autoPlay=1"></iframe> -->
 		</div>
 			<div class="column2 right">
 			<table>
@@ -96,83 +96,50 @@
 		</div>
 	</section>	
 
-	<section id="corousel">
-		<div class="container">
-			<h2>Mi TV</h2>
-			<slick infinite="true" slides-to-show="4" slides-to-scroll="1">
-	  			<div class="channel">
-	  				<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZFGBdSECwzao4VtbPpgvZmi5a_SRbv25Yj41VbUn-k9qYFHoE" alt="">
-	  			</div>
-	 			<div class="channel">
-	  				<img src="" alt="">
-	  			</div>
-	  			<div class="channel">
-	  				<img src="" alt="">
-	  			</div>
-	  			<div class="channel">
-	  				<img src="" alt="">
-	  			</div>
-	  			<div class="channel">
-	  				<img src="" alt="">
-	  			</div>
-			</slick>
-		</div>
-	</section>	
-	<section id="corousel">
-		<div class="container">
-			<h2>Canales Deportivos</h2>
-			<slick infinite="true" slides-to-show="4" slides-to-scroll="1">
-	  			<div class="channel">
-	  				<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZFGBdSECwzao4VtbPpgvZmi5a_SRbv25Yj41VbUn-k9qYFHoE" alt="">
-	  			</div>
-	 			<div class="channel">
-	  				<img src="http://www.wonderslist.com/wp-content/uploads/2013/11/ESPN-logo.jpg" alt="">
-	  			</div>
-	  			<div class="channel">
-	  				<img src="http://relhostpic.eu/images/2014/11/26/TF3Kv.jpg" alt="">
-	  			</div>
-	  			<div class="channel">
-	  				<img src="http://www.wonderslist.com/wp-content/uploads/2013/11/ESPN-logo.jpg" alt="">
-	  			</div>
-	  			<div class="channel">
-	  				<img src="http://relhostpic.eu/images/2014/11/26/TF3Kv.jpg" alt="">
-	  			</div>
-			</slick>
-		</div>
-	</section>	
-	<section id="corousel">
-		<div class="container">
-			<h2>Canales de peliculas</h2>
-	  		<slick lazy-load="ondemand" slides-to-show="4" slides-to-scroll="1">
-	 			<div class="channel">
-	  				<img data-lazy="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Hallmark_Movie_Channel.svg/800px-Hallmark_Movie_Channel.svg.png" alt="">
-	  			</div>
-	  			<div class="channel">
-	  				<img data-lazy="http://cdn.24.co.za/files/Cms/General/d/1546/660448aa6b5e4b0dbb5ba6b37380e4ae.jpg" alt="">
-	  			</div>
-	  			<div class="channel">
-	  				<img data-lazy="http://www.blackfilm.com/read/wp-content/uploads/2014/12/Urban-Movie-Channel-logo.jpg" alt="">
-	  			</div>
-	  			<div class="channel">
-	  				<img data-lazy="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEzes0Xy4U0xBQMW9kF5_XqWJkTy0h_5Ht9QrSFNZXapteVx8M" alt="">
-	  			</div>
-	  			<div class="channel">
-	  				<img data-lazy="http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/3b/75/3b75b9ee0d309c224fdac377ed6bfb2d.png?itok=UH4-D51Z" alt="">
-	  			</div>
-			</slick>
-		</div>
-	</section>	
-	<section id="download" class="light-gray">
-		<div class="container">
-			<div class="column4"></div>
-			<div class="column4">
-				<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSN74Bkrry4nMYYfdbR-lfMV-p8MOM8cykmEnyjYQe7SaQvZUXc" alt="">
+	<section ng-controller="channels">
+		<section id="corousel">
+			<div class="container">
+				<h2>My TV</h2>
+				<slick init-onload="false" slick-apply='addChannel' data="dataLoaded" slides-to-show="3" dots="true">
+		  			<div ng-repeat="channel in myTV" class="channel">
+		  				<img src="{{channel.img}}" alt="" ng-click="quitChannel(channel.id)">
+		  			</div>
+				</slick>
 			</div>
-			<div class="column4">
-				<img src="https://buffer.com/images/common/app-store.png" alt="">
+		</section>	
+		<section id="corousel" >
+			<div class="container">
+				<h2>Sport Channels</h2>
+				<slick infinite="true" slides-to-show="4" slides-to-scroll="1">
+		  			<div ng-repeat="channel in sports" class="channel">
+		  				<img src="{{channel.img}}" alt="" ng-click="addChannel(channel)">
+		  			</div>
+				</slick>
 			</div>
-			<div class="column4"></div>
-		</div>
+		</section>	
+		<section id="corousel">
+			<div class="container">
+				<h2>Canales de peliculas</h2>
+		  		<!-- <slick lazy-load="ondemand" slides-to-show="4" slides-to-scroll="1"> -->
+		 		<slick infinite="true" slides-to-show="4" slides-to-scroll="1">
+			  		<div ng-repeat="channel in movies" class="channel">
+			  			<img src="{{channel.img}}" alt="" ng-click="addChannel(channel)">
+			  		</div>
+				</slick>
+			</div>
+		</section>	
+		<section id="download" class="light-gray">
+			<div class="container">
+				<div class="column4"></div>
+				<div class="column4">
+					<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSN74Bkrry4nMYYfdbR-lfMV-p8MOM8cykmEnyjYQe7SaQvZUXc" alt="">
+				</div>
+				<div class="column4">
+					<img src="https://buffer.com/images/common/app-store.png" alt="">
+				</div>
+				<div class="column4"></div>
+			</div>
+		</section>
 	</section>
 
 </main>
