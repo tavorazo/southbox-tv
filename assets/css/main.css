@@ -69,7 +69,13 @@ main{ min-height: 1000px;}
 
 /* corouseles */
 #corousel{ background:none; border-bottom:1px solid #e3e3e3; }
-#corousel img{ display:block; max-width:200px; min-width:60px; width:auto; border:1px solid #e3e3e3; height:100px; cursor:pointer; }
+#corousel .channel{ position: relative;}
+#corousel .img{ display:block; max-width:200px; min-width:120px; width:auto; border:1px solid #e3e3e3; height:100px;}
+#corousel .play{  position:absolute; z-index: 999; width: 35px!important; height: 30px; bottom: 15px; margin: auto 10px; display: none;  cursor:pointer; }
+#corousel .channel:hover img{ display: block;}
+
+
+
 
 #download img{ width:200px; display:block; margin: 60px auto 0; }
 

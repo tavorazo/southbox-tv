@@ -53,10 +53,14 @@
 
 </header>
 
-<main >
+<main ng-controller="tvcontrol" >
 	<section class="tv" id="tv" >
 		<div class="column2 left">
-			<!-- <iframe src="http://www.filmon.tv/tv/channel/export?channel_id=299&autoPlay=1"></iframe> -->
+			<!-- <iframe width="560" height="315" ng-src="{{url}}" frameborder="0" allowfullscreen></iframe> -->
+			<!-- <youtube code="1864"></youtube> -->
+			<channel  ></channel>
+
+
 		</div>
 			<div class="column2 right">
 			<table>
@@ -96,23 +100,24 @@
 		</div>
 	</section>	
 
-	<section ng-controller="channels">
+
 		<section id="corousel">
 			<div class="container">
 				<h2>My TV</h2>
-				<slick init-onload="false" slick-apply='addChannel' data="dataLoaded" slides-to-show="3" dots="true">
-		  			<div ng-repeat="channel in myTV" class="channel">
-		  				<img src="{{channel.img}}" alt="" ng-click="quitChannel(channel.id)">
-		  			</div>
-				</slick>
-			</div>
+			    <slick  data="viewData" ng-if="viewLoaded" settings="slickPanels" slides-to-show="4" slides-to-scroll="1">
+			      <div ng-repeat="view in viewData" class="channel">
+		  			<img src="{{view.img}}" class="img" ng-click="">
+			      </div>
+			    </slick>
+			 </div>
 		</section>	
 		<section id="corousel" >
 			<div class="container">
 				<h2>Sport Channels</h2>
 				<slick infinite="true" slides-to-show="4" slides-to-scroll="1">
 		  			<div ng-repeat="channel in sports" class="channel">
-		  				<img src="{{channel.img}}" alt="" ng-click="addChannel(channel)">
+			  			<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png" class="play" ng-click="addChannel(channel)">
+		  				<img src="{{channel.img}}" class="img" ng-click="addChannel(channel)">
 		  			</div>
 				</slick>
 			</div>
@@ -123,7 +128,8 @@
 		  		<!-- <slick lazy-load="ondemand" slides-to-show="4" slides-to-scroll="1"> -->
 		 		<slick infinite="true" slides-to-show="4" slides-to-scroll="1">
 			  		<div ng-repeat="channel in movies" class="channel">
-			  			<img src="{{channel.img}}" alt="" ng-click="addChannel(channel)">
+			  			<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png" class="play" ng-click="addChannel(channel)">
+			  			<img src="{{channel.img}}" class="img" >
 			  		</div>
 				</slick>
 			</div>
@@ -140,7 +146,6 @@
 				<div class="column4"></div>
 			</div>
 		</section>
-	</section>
 
 </main>
 
@@ -192,9 +197,6 @@
 	<div class="firma"><p>Todos los derechos reservados  <a href="#" title="">Southboxtv</a>. | Created by <a href="htp://tavorazo.github.io" title=""> --- </a></p></div>
 </footer>
 <!-- end footer section -->
-
-</body>
-
 
 
 </body>
