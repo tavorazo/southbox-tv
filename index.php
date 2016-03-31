@@ -104,9 +104,10 @@
 		<section id="corousel">
 			<div class="container">
 				<h2>My TV</h2>
-			    <slick  data="viewData" ng-if="viewLoaded" settings="slickPanels" slides-to-show="4" slides-to-scroll="1">
-			      <div ng-repeat="view in viewData" class="channel">
-		  			<img src="{{view.img}}" class="img" ng-click="">
+			    <slick  data="myTV" ng-if="viewLoaded" settings="slickPanels" slides-to-show="4" slides-to-scroll="1">
+			      <div ng-repeat="channel in myTV" class="channel">
+			  		<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/close_red.png" class="play"  ng-click="removeChannel(channel, myTV)"	>
+		  			<img src="{{channel.img}}" class="img">
 			      </div>
 			    </slick>
 			 </div>
@@ -116,8 +117,8 @@
 				<h2>Sport Channels</h2>
 				<slick infinite="true" slides-to-show="4" slides-to-scroll="1">
 		  			<div ng-repeat="channel in sports" class="channel">
-			  			<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png" class="play" ng-click="addChannel(channel)">
-		  				<img src="{{channel.img}}" class="img" ng-click="addChannel(channel)">
+			  			<img src="{{channel.botonAdd}}" class="play" ng-click="addChannel(channel);">
+		  				<img src="{{channel.img}}" class="img">
 		  			</div>
 				</slick>
 			</div>
