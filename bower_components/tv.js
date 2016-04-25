@@ -5,11 +5,16 @@ angular
 	    return {
 		    restrict: 'EA',
 		    scope: { code:'@code' },
-	    	template: '<iframe width="560" height="315" src="http://www.filmon.tv/tv/channel/export?channel_id=713" frameborder="0" allowfullscreen> </iframe>'
+	    	template: '<iframe class="embed-responsive-item" name="reloadi" src="http://tutvgratis.tv/embed/bandamax" scrolling="no" data-checked="true"></iframe>'
 		};
 	})
 
-function tvcontrol($rootScope, $window, $location, $scope, $timeout, $compile) {
+
+
+function tvcontrol($rootScope, $window, $location, $scope, $timeout, $compile, $sce) {
+    $scope.customUrl = $sce.trustAsResourceUrl('http://tutvgratis.tv/embed/bandamax');
+
+
 	$rootScope.myTV=[];
 
 	$scope.sports = [
@@ -93,6 +98,10 @@ function tvcontrol($rootScope, $window, $location, $scope, $timeout, $compile) {
 	$rootScope.viewData = [];
 	$rootScope.viewLoaded = true;
 
+	$scope.play = function(){
+    	$scope.customUrl = $sce.trustAsResourceUrl('http://tutvgratis.tv/embed/telehit');
+	};
+
 	$rootScope.addChannel = function(channel) {
 		$rootScope.viewLoaded = false;
 		$rootScope.myTV.push(channel);
@@ -130,7 +139,5 @@ function tvcontrol($rootScope, $window, $location, $scope, $timeout, $compile) {
 	    }, 10);
 
 	};
-
-	 
 
 };
