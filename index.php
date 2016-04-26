@@ -59,7 +59,7 @@
 <main ng-controller="tvcontrol" >
 	<section class="tv" id="tv" >
 		<div class="column2 left">
-			<iframe ng-src="{{customUrl}}" height="315" width="640" scrolling="no" data-checked="true"></iframe>
+			<iframe ng-src="{{customUrl}}" height="505" width="640" scrolling="no" data-checked="true"></iframe>
 			<!-- <iframe width="560" height="315" ng-src="{{url}}" frameborder="0" allowfullscreen></iframe> -->
 			<!-- <youtube code="1864"></youtube> -->
 			<!-- <channel  ></channel> -->
@@ -112,6 +112,8 @@
 			    <slick  data="myTV" ng-if="viewLoaded" settings="slickPanels" slides-to-show="4" slides-to-scroll="1">
 			      <div ng-repeat="channel in myTV" class="channel">
 			  		<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/close_red.png" class="play"  ng-click="removeChannel(channel, myTV)"	>
+			  		<img style="background: #000; width: 20px; height: 20px; cursor:pointer;" ng-click="play(channel.url)">
+
 		  			<img src="{{channel.img}}" class="img">
 			      </div>
 			    </slick>
@@ -123,6 +125,17 @@
 				<slick infinite="true" slides-to-show="4" slides-to-scroll="1">
 		  			<div ng-repeat="channel in sports" class="channel">
 			  			<img src="{{channel.botonAdd}}" class="play" ng-click="addChannel(channel);">
+		  				<img src="{{channel.img}}" class="img">
+		  			</div>
+				</slick>
+			</div>
+		</section>	
+		<section id="corousel" >
+			<div class="container">
+				<h2>Mexican Channels</h2>
+				<slick infinite="true" slides-to-show="4" slides-to-scroll="1">
+		  			<div ng-repeat="channel in mexico" class="channel">
+		  				<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png" class="play" ng-click="addChannel(channel)">
 		  				<img src="{{channel.img}}" class="img">
 		  			</div>
 				</slick>
@@ -140,6 +153,8 @@
 				</slick>
 			</div>
 		</section>	
+
+
 		<section id="download" class="light-gray">
 			<div class="container">
 				<div class="column4"></div>
