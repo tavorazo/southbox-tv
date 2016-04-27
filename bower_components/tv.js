@@ -51,12 +51,6 @@ function tvcontrol($rootScope, $window, $location, $scope, $timeout, $compile, $
 	];
 	$scope.movies = [
 		{
-			"id" 		: 	"mv-1",
-			"title"		: 	"FX HD",
-			"img"		: 	"http://tutvgratis.tv/media/uploads/2015/01/2ac81cc8011e555b308c5cf5597008.gif",
-			"url"		: 	"http://tutvgratis.tv/embed/tutv?chid=11"
-		},
-		{
 			"id" 		: 	"mv-2",
 			"title"		: 	"Sony TV",
 			"img"		: 	"http://tutvgratis.tv/media/uploads/2015/01/b50891d873f9cbaa74acc7efb6d44e.gif",
