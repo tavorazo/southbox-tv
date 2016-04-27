@@ -12,6 +12,8 @@ li{ list-style-type: none; }
 table {width: 100%;}
 td,th{height: 40px; cursor: pointer;}
 td{font-size: 13px; padding-left: 10px;}
+
+iframe{ background: #000; border: none;}
 .trans{ -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -ms-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; }
 .hidden {display:none!important;}
 
@@ -71,7 +73,8 @@ main{ min-height: 1000px;}
 #corousel{ background:none; border-bottom:1px solid #e3e3e3; }
 #corousel .channel{ position: relative;}
 #corousel .img{ display:block; max-width:200px; min-width:120px; width:auto; border:1px solid #e3e3e3; height:100px;}
-#corousel .play{  position:absolute; z-index: 999; max-width: 35px!important;  bottom: 15px; margin: auto 10px; display: none;  cursor:pointer; }
+#corousel .btn1{  position:absolute; z-index: 999; max-width: 35px!important;  bottom: 15px; display: none;  cursor:pointer; left: 25px;}
+#corousel .btn2{  position:absolute; z-index: 999; max-width: 35px!important;  bottom: 15px; display: none;  cursor:pointer; left: 65px; width: 28px;}
 #corousel .channel:hover img{ display: block;}
 
 
@@ -89,10 +92,10 @@ footer .firma a{ font-weight: 900;}
 /*Responsive*/
 @media only screen and (max-width: 850px){
 	.column2{width: 100%;}
-	.column4{width: 80%; padding: 0 10%; text-align: center;}
+	.column4{width: 80%; padding: 0 10%; text-align: center; min-height: 10px;}
 
-	header menu .menu-logo{    width: 30%;}
+	header menu .menu-logo{    width: 30%; margin: 0 4% 0 0; }
 	header menu .menu-logo img{     width: 100%; margin-top: -20px; }
 	header menu .menu-search{ width: 65%; }
-	header menu .menu-options{ width:100%; }
+	header menu .menu-options{ width:100%; margin-left: -20px; }
 }

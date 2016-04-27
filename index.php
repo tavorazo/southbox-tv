@@ -3,7 +3,7 @@
 <html class="no-js" lang="es-mx" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"  itemscope="" itemtype="http://schema.org/LocalBusiness" xmlns="http://www.w3.org/1999/xhtml" xml:lang="es-mx" ng-app="tv">
 
 <head>
-	<title>SouthBox TV | Chile</title>
+	<title>SouthBox TV | Beta</title>
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta name="author" content="Octavio Razo & Adrian Vazquez">
@@ -57,15 +57,9 @@
 </header>
 
 <main ng-controller="tvcontrol" >
-	<section class="tv" id="tv" >
+	<section class="tv purple" id="tv" >
 		<div class="column2 left">
 			<iframe ng-src="{{customUrl}}" height="505" width="640" scrolling="no" data-checked="true"></iframe>
-			<!-- <iframe width="560" height="315" ng-src="{{url}}" frameborder="0" allowfullscreen></iframe> -->
-			<!-- <youtube code="1864"></youtube> -->
-			<!-- <channel  ></channel> -->
-			<button ng-click="play()"> Play</button>
-
-
 		</div>
 			<div class="column2 right">
 			<table>
@@ -111,9 +105,8 @@
 				<h2>My TV</h2>
 			    <slick  data="myTV" ng-if="viewLoaded" settings="slickPanels" slides-to-show="4" slides-to-scroll="1">
 			      <div ng-repeat="channel in myTV" class="channel">
-			  		<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/close_red.png" class="play"  ng-click="removeChannel(channel, myTV)"	>
-			  		<img style="background: #000; width: 20px; height: 20px; cursor:pointer;" ng-click="play(channel.url)">
-
+			  		<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/close_red.png" class="btn1"  ng-click="removeChannel(channel, myTV)"	>
+			  		<img src="https://cdn1.iconfinder.com/data/icons/basic-ui-elements-color/700/02_play-32.png" class="btn2" ng-click="play(channel.url)">
 		  			<img src="{{channel.img}}" class="img">
 			      </div>
 			    </slick>
@@ -124,7 +117,7 @@
 				<h2>Sport Channels</h2>
 				<slick infinite="true" slides-to-show="4" slides-to-scroll="1">
 		  			<div ng-repeat="channel in sports" class="channel">
-			  			<img src="{{channel.botonAdd}}" class="play" ng-click="addChannel(channel);">
+		  				<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png" class="btn1" ng-click="addChannel(channel)">
 		  				<img src="{{channel.img}}" class="img">
 		  			</div>
 				</slick>
@@ -135,7 +128,7 @@
 				<h2>Mexican Channels</h2>
 				<slick infinite="true" slides-to-show="4" slides-to-scroll="1">
 		  			<div ng-repeat="channel in mexico" class="channel">
-		  				<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png" class="play" ng-click="addChannel(channel)">
+		  				<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png" class="btn1" ng-click="addChannel(channel)">
 		  				<img src="{{channel.img}}" class="img">
 		  			</div>
 				</slick>
@@ -147,7 +140,7 @@
 		  		<!-- <slick lazy-load="ondemand" slides-to-show="4" slides-to-scroll="1"> -->
 		 		<slick infinite="true" slides-to-show="4" slides-to-scroll="1">
 			  		<div ng-repeat="channel in movies" class="channel">
-			  			<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png" class="play" ng-click="addChannel(channel)">
+			  			<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png" class="btn1" ng-click="addChannel(channel)">
 			  			<img src="{{channel.img}}" class="img" >
 			  		</div>
 				</slick>
@@ -215,7 +208,7 @@
 			</p>
 		</div>
 	</div>
-	<div class="firma"><p>Todos los derechos reservados  <a href="#" title="">Southboxtv</a>. | Created by <a href="htp://tavorazo.github.io" title=""> --- </a></p></div>
+	<div class="firma"><p>Todos los derechos reservados  <a href="#" title="">Southboxtv</a>. | Created by <a href="htp://tavorazo.github.io" title=""> Octavio Razo </a></p></div>
 </footer>
 <!-- end footer section -->
 

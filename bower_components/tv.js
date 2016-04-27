@@ -1,113 +1,107 @@
 angular
     .module('tv', ["slick"])
     .controller('tvcontrol', tvcontrol)
-    .directive('channel', function() {
-	    return {
-		    restrict: 'EA',
-		    scope: { code:'@code' },
-	    	template: '<iframe class="embed-responsive-item" name="reloadi" src="http://tutvgratis.tv/embed/bandamax" scrolling="no" data-checked="true"></iframe>'
-		};
-	})
+
 
 
 
 function tvcontrol($rootScope, $window, $location, $scope, $timeout, $compile, $sce) {
-    $scope.customUrl = $sce.trustAsResourceUrl('http://tutvgratis.tv/embed/tutv?chid=77');
+    $scope.customUrl = $sce.trustAsResourceUrl('');
 
 
 	$rootScope.myTV=[];
 
 	$scope.sports = [
 		{
-			"id" 		: 	1,
-			"title"		: 	"UFC Sport",
-			"img"		: 	"http://media.ufc.tv/logos/logo-baja.png",
-			"botonAdd"	: 	"https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png",
-			"url" 		: 	""
-		},
-		{
-			"id" 		: 	2,
+			"id" 		: 	"sport-1",
 			"title"		: 	"ESPN",
-			"img"		: 	"http://worldsoccertalk.com/wp-content/uploads/2008/04/espn-deportes-logo.jpg",
-			"botonAdd"	: 	"https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png",
-			"url"		: 	""
+			"img"		: 	"http://tutvgratis.tv/media/uploads/2015/01/2a6e5f72cc53efecea1966d34f296d.gif",
+			"url" 		: 	"http://tutvgratis.tv/embed/tutv?chid=198"
 		},
 		{
-			"id" 		: 	3,
-			"title"		: 	"Universal Sport",
-			"botonAdd"	: 	"https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png",
-			"img"		: 	"https://lh4.googleusercontent.com/-2fNnWrTMcMA/TYtJuGu4lJI/AAAAAAAAAF4/jbQR6Hj8-gk/s1600/universal_sports.png",
-			"url"		: 	""
+			"id" 		: 	"sport-2",
+			"title"		: 	"ESPN HD",
+			"img"		: 	"http://tutvgratis.tv/media/uploads/2015/01/1071444b38467e091a0b3966033fa1.gif",
+			"url"		: 	"http://tutvgratis.tv/embed/tutv?chid=181"
 		},
 		{
-			"id" 		: 	4,
-			"title"		: 	"Fox Sport 3",
-			"botonAdd"	: 	"https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png",
-			"img"		: 	"https://www.foxtel.com.au/content/dam/foxtel/shared/channel/FS3/fox-sports-3-colour.png",
-			"url": 	""
-		},
-		{
-			"id" 		: 	5,
-			"title"		: 	"ESPN 3",
-			"botonAdd"	: 	"https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png",
-			"img"		: 	"http://espnmediazone.com/us/files/2012/04/ESPN3-Logo.jpg",
-			"url": 	""
-		},
-		{
-			"id" 		: 	6,
+			"id" 		: 	"sport-3",
 			"title"		: 	"ESPN 2",
-			"botonAdd"	: 	"https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png",
-			"img"		: 	"http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/56/be/espn_5.jpg?itok=rMMf-XL9",
-			"url": 	""
+			"img"		: 	"http://tutvgratis.tv/media/uploads/2015/01/db750cc1079f67d5985478b2e71ed6.gif",
+			"url"		: 	"http://tutvgratis.tv/embed/tutv?chid=160"
+		},
+		{
+			"id" 		: 	"sport-4",
+			"title"		: 	"ESPN 3",
+			"img"		: 	"http://tutvgratis.tv/media/uploads/2015/01/76611b29120fd8f7592098b1e0cc8a.gif",
+			"url" 		: 	"http://tutvgratis.tv/embed/tutv?chid=159"
+		},
+		{
+			"id" 		: 	"sport-5",
+			"title"		: 	"Fox Sport 2",
+			"img"		: 	"http://tutvgratis.tv/media/uploads/2015/01/03464ed3729ce34b24878862f2ba8c.gif",
+			"url" 		: 	"http://tutvgratis.tv/embed/tutv?chid=88"
+		},
+		{
+			"id" 		: 	"sport-6",
+			"title"		: 	"Fox Sport HD",
+			"img"		: 	"http://tutvgratis.tv/media/uploads/2015/01/53c1adcfae46e1ac642e303f3384ba.gif",
+			"url" 		: 	"http://tutvgratis.tv/embed/tutv?chid=47"
 		}
 	];
 	$scope.movies = [
 		{
-			"id" 		: 	1,
-			"title"		: 	"Movie Loft TV",
-			"img"		: 	"http://static.wixstatic.com/media/dfeb20_f3dea740ea9443d1a5fb4521c29f5731.png/v1/fill/w_148,h_90,al_c,lg_1/dfeb20_f3dea740ea9443d1a5fb4521c29f5731.png",
-			"url"		: 	""
+			"id" 		: 	"mv-1",
+			"title"		: 	"FX HD",
+			"img"		: 	"http://tutvgratis.tv/media/uploads/2015/01/2ac81cc8011e555b308c5cf5597008.gif",
+			"url"		: 	"http://tutvgratis.tv/embed/tutv?chid=11"
 		},
 		{
-			"id" 		: 	2,
-			"title"		: 	"Cultra TV",
-			"img"		: 	"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDIQh4mQ-pHWEzzMerz-tmRuTAB8qIvvYtFiLFyXMavE8AqvESljiVCIhH",
-			"url"		: 	""
+			"id" 		: 	"mv-2",
+			"title"		: 	"Sony TV",
+			"img"		: 	"http://tutvgratis.tv/media/uploads/2015/01/b50891d873f9cbaa74acc7efb6d44e.gif",
+			"url"		: 	"http://tutvgratis.tv/embed/tutv?chid=27"
 		},
 		{
-			"id" 		: 	3,
-			"title"		: 	"Hallmark",
-			"img"		: 	"https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Hallmark_Movie_Channel.svg/800px-Hallmark_Movie_Channel.svg.png",
-			"url": 	""
+			"id" 		: 	"mv-3",
+			"title"		: 	"TNT HD",
+			"img"		: 	"http://tutvgratis.tv/media/uploads/2015/01/6544597c5fb07f3ae253dc55f703aa.gif",
+			"url"		: 	"http://tutvgratis.tv/embed/tutv?chid=3"
 		},
 		{
-			"id" 		: 	4,
-			"title"		: 	"Sony",
-			"img"		: 	"https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEzes0Xy4U0xBQMW9kF5_XqWJkTy0h_5Ht9QrSFNZXapteVx8M",
-			"url": 	""
+			"id" 		: 	"mv-4",
+			"title"		: 	"Universal Channel",
+			"img"		: 	"http://tutvgratis.tv/media/uploads/2015/01/78cd39d31a66bea6387e5591d278cd.gif",
+			"url"		: 	"http://tutvgratis.tv/embed/tutv?chid=15"
 		},
 		{
-			"id" 		: 	5,
-			"title"		: 	"FX",
-			"img"		: 	"http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/3b/75/3b75b9ee0d309c224fdac377ed6bfb2d.png?itok=UH4-D51Z",
-			"url": 	""
+			"id" 		: 	"mv-5",
+			"title"		: 	"Space",
+			"img"		: 	"http://tutvgratis.tv/media/uploads/2015/01/84910a9bc220f2de423cff30807ade.gif",
+			"url"		: 	"http://tutvgratis.tv/embed/tutv?chid=18"
+		},
+		{
+			"id" 		: 	"mv-5",
+			"title"		: 	"Space",
+			"img"		: 	"http://tutvgratis.tv/media/uploads/2015/01/79415545eed2532b70c33bbc6ac8b6.gif",
+			"url"		: 	"http://tutvgratis.tv/embed/tutv?chid=24"
 		}
 	];
 	$scope.mexico = [
 		{
-			"id"		: 	1,
+			"id"		: 	"mx-1",
 			"title" 	: 	"Canal 5",
 			"img" 		: 	"http://tutvgratis.tv/media/uploads/2015/01/20e612bec361214fdd9915817823d2.gif",
 			"url"		: 	"http://tutvgratis.tv/embed/tutv?chid=77"
 		},
 		{
-			"id"		: 	2,
+			"id"		: 	"mx-2",
 			"title" 	: 	"Telehit",
 			"img" 		: 	"http://tutvgratis.tv/media/uploads/2015/01/1388126d0e586f960dff8c0919292a.gif",
 			"url"		: 	"http://tutvgratis.tv/embed/telehit"
 		},
 		{
-			"id"		: 	3,
+			"id"		: 	"mx-3",
 			"title" 	: 	"Canal de las estrellas",
 			"img" 		: 	"http://tutvgratis.tv/media/uploads/2015/01/40610ece47b4e8668210055af4381d.gif",
 			"url"		: 	"http://tutvgratis.tv/embed/tutv?chid=69"
@@ -124,13 +118,28 @@ function tvcontrol($rootScope, $window, $location, $scope, $timeout, $compile, $
 	};
 
 	$rootScope.addChannel = function(channel) {
+		console.log("el canal es", $rootScope.myTV.length);
+		$scope.check = false;
 		$rootScope.viewLoaded = false;
-		$rootScope.myTV.push(channel);
-		channel.botonAdd = "";
+		for (var i = 0; i < $rootScope.myTV.length; i++) {
+			console.log("for " + i + " " + $scope.check);
+			if ($rootScope.myTV[i].id == channel.id ) {
+				$scope.check = true;
+				console.log("entro" + $scope.check);
+				break;
+			}
+		}
+
+		if (!$scope.check) {
+			console.log("entro2");
+			$rootScope.myTV.push(channel);
+			// channel.botonAdd = "";
+		}	
 		$timeout(function() {
 	        $rootScope.viewLoaded = true;
-	    }, 10);
+		}, 10);
 	 };
+
 
 	 $scope.slickPanels = {
 	    method: {},
