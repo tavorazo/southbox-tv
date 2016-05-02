@@ -104,7 +104,7 @@
 			<div class="container">
 				
 				<br> <br> 
-				<a href="beta2/"> Propuesta 2</a>
+				<a href="beta2/"> <h2>Propuesta 2</h2></a>
 
 				<h2>My TV</h2>
 			    <slick  data="myTV" ng-if="viewLoaded" settings="slickPanels" slides-to-show="4" slides-to-scroll="1">
