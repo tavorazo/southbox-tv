@@ -102,10 +102,6 @@
 
 		<section id="corousel">
 			<div class="container">
-				
-				<br> <br> 
-				<a href="beta2/"> <h2>Propuesta 2</h2></a>
-
 				<h2>My TV</h2>
 			    <slick  data="myTV" ng-if="viewLoaded" settings="slickPanels" slides-to-show="4" slides-to-scroll="1">
 			      <div ng-repeat="channel in myTV" class="channel">
@@ -212,7 +208,7 @@
 			</p>
 		</div>
 	</div>
-	<div class="firma"><p>Todos los derechos reservados  <a href="#" title="">Southboxtv</a>. | Created by <a href="htp://tavorazo.github.io" title=""> Octavio Razo </a></p></div>
+	<div class="firma"><p>Todos los derechos reservados  <a href="#" title="">Southboxtv</a>. </p></div>
 </footer>
 <!-- end footer section -->
 
