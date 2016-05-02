@@ -102,6 +102,10 @@
 
 		<section id="corousel">
 			<div class="container">
+				
+				<br> <br> 
+				<a href="beta2/"> Propuesta 2</a>
+
 				<h2>My TV</h2>
 			    <slick  data="myTV" ng-if="viewLoaded" settings="slickPanels" slides-to-show="4" slides-to-scroll="1">
 			      <div ng-repeat="channel in myTV" class="channel">
