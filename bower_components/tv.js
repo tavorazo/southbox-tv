@@ -60,7 +60,7 @@ function tvcontrol($rootScope, $window, $location, $scope, $timeout, $compile, $
 			"id" 		: 	"mv-3",
 			"title"		: 	"TNT HD",
 			"img"		: 	"http://tutvgratis.tv/media/uploads/2015/01/6544597c5fb07f3ae253dc55f703aa.gif",
-			"url"		: 	"http://tutvgratis.tv/embed/tutv?chid=3"
+			"url"		: 	"http://tutvgratis.tv/embed/tnt"
 		},
 		{
 			"id" 		: 	"mv-4",
