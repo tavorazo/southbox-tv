@@ -28,7 +28,6 @@
 	<script src="bower_components/angular-slick/dist/slick.min.js"></script>
 	<script src="bower_components/tv.js"></script>
 
-
 	<script type='text/javascript' src='http://tutvgratis.tv/embed.js'></script>
 
 </head>
@@ -59,6 +58,7 @@
 <main ng-controller="tvcontrol" >
 	<section class="tv purple" id="tv" >
 		<div class="column2 left">
+			<script type='text/javascript'> width=728, height=410, channel='{{customUrl}}';</script>
 			<iframe ng-src="{{customUrl}}" height="505" width="640" scrolling="no" data-checked="true"></iframe>
 		</div>
 			<div class="column2 right">
