@@ -6796,6 +6796,7 @@ a:active {
 
 .PlayerPage-theater {
   background-color: #000;
+  position: relative;
 }
 
 .VideoPlayer-player {
@@ -7038,3 +7039,38 @@ body{ background: #f1f1f1; }
 .VideoPortal-navBar{ margin: 15px 0; }
 .ms-NavBar,
 .ChannelList-item{ background: #fff;     box-shadow: 0 1px 2px rgba(0,0,0,.1);}
+.PlayerPage-theaterPlayer { margin: 0; }
+.programation{
+    position: absolute;
+    right: 0;
+    min-height: 100%;
+    min-width: 200px;
+    top: 0;
+    max-width: 628px;
+    width: 30%;
+    overflow: auto;
+}
+.programTV{
+  width: 98%;
+  padding: 1%;
+  margin: 10px 0;
+  border-bottom: 1px solid #111;
+  height: 100px;
+  background: #000;
+  color: #3a3a3a;
+}
+.programTV h4{
+    font-size: 13px;
+    font-weight: normal;
+}
+.programTV .VideoList-thumbCaption {
+  position: relative;
+  background-color: rgba(255,255,255,0.1);
+  color: #767676;
+}
+
+@media (max-width: 980px) {
+  .programation {
+    display: none;
+  }
+}
