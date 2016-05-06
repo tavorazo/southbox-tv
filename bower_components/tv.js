@@ -31,7 +31,7 @@ function tvcontrol($rootScope, $window, $location, $scope, $timeout, $compile, $
 			"title": "Telenovelas TV",
 			"img": "https://static.filmon.com/assets/channels/2624/big_logo.png",
 			"url":"https://www.filmon.com/tv/channel/export?channel_id=2624&autoPlay=1"
-		},
+		}
 	];
 
 	$scope.sports = [
