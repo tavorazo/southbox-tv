@@ -1,5 +1,5 @@
 /*GENERAL*/
-body{ width:100%; left:0; margin:0; top:0; font-family: 'Open sans', 'Montserrat', 'Avenir', 'Lato', Arial !important; color:#2E2E2E;}
+body{ width:100%; left:0; margin:0; top:0; font-family: 'Open sans', 'Montserrat', 'Avenir', 'Lato', Arial !important; color:#2E2E2E; min-width: 1200px;}
 header, footer, section{ width:100%;  overflow:hidden; margin-top:0; height:auto;  }
 .container{ padding:50px 0; min-height:200px; width:80%; height:auto; /*border-bottom:1px #FFf solid;*/ margin:auto; display: block;   }
 .content{ position:relative; margin:auto; }
@@ -20,6 +20,7 @@ iframe{ background: #000; border: none;}
 /****colores****/
 .text-white{ color:white; }
 .white{ background-color: white ; }
+.black { background: #000!important;}
 .purple{background-color: #223845;}
 .light-gray{background-color: #EFEFEF;}
 .light-blue{background-color: #EBF2F5;}
@@ -72,7 +73,7 @@ main{ min-height: 1000px;}
 /* corouseles */
 #corousel{ background:none; border-bottom:1px solid #e3e3e3; }
 #corousel .channel{ position: relative;}
-#corousel .img{ display:block; max-width:200px; min-width:120px; width:auto; border:1px solid #e3e3e3; height:100px;}
+#corousel .img{ display:block; max-width:150px; width:auto; border:1px solid #e3e3e3; max-height:100px; background: #f2f2f2; padding: 25px;}
 #corousel .btn1{  position:absolute; z-index: 999; max-width: 35px!important;  bottom: 15px; display: none;  cursor:pointer; left: 25px;}
 #corousel .btn2{  position:absolute; z-index: 999; max-width: 35px!important;  bottom: 15px; display: none;  cursor:pointer; left: 65px; width: 28px;}
 #corousel .channel:hover img{ display: block;}
@@ -90,12 +91,12 @@ footer .firma a{ font-weight: 900;}
 
 
 /*Responsive*/
-@media only screen and (max-width: 850px){
-	.column2{width: 100%;}
-	.column4{width: 80%; padding: 0 10%; text-align: center; min-height: 10px;}
+// @media only screen and (max-width: 850px){
+// 	.column2{width: 100%;}
+// 	.column4{width: 80%; padding: 0 10%; text-align: center; min-height: 10px;}
 
-	header menu .menu-logo{    width: 30%; margin: 0 4% 0 0; }
-	header menu .menu-logo img{     width: 100%; margin-top: -20px; }
-	header menu .menu-search{ width: 65%; }
-	header menu .menu-options{ width:100%; margin-left: -20px; }
-}
+// 	header menu .menu-logo{    width: 30%; margin: 0 4% 0 0; }
+// 	header menu .menu-logo img{     width: 100%; margin-top: -20px; }
+// 	header menu .menu-search{ width: 65%; }
+// 	header menu .menu-options{ width:100%; margin-left: -20px; }
+// }

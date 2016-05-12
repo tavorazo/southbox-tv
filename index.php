@@ -40,11 +40,11 @@
 		</figure>
 		<div class="menu-search">
 			<input type="search" placeholder="Busca videos, canales y más...">
-			<button class="purple text-white trans"> 
+			<button class="black text-white trans"> 
 			<img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-20.png">
 			</button>
 		</div>
-		<div class="menu-options purple text-right">
+		<div class="menu-options black text-right">
 			<ul>
 				<li><a href="#" class="btn2 trans">¡Registrate ahora!</a></li>
 				<li><a href="#"><img src="https://cdn4.iconfinder.com/data/icons/ubercons-web-application/512/Avatar-24.png"></a></li>
@@ -56,7 +56,7 @@
 </header>
 
 <main ng-controller="tvcontrol" >
-	<section class="tv purple" id="tv" >
+	<section class="tv black" id="tv" >
 		<div class="column2 left">
 			<script type='text/javascript'> width=728, height=410, channel='{{customUrl}}';</script>
 			<iframe ng-src="{{customUrl}}" height="505" width="640" scrolling="no" data-checked="true"></iframe>
@@ -100,10 +100,10 @@
 	</section>	
 
 
-		<section id="corousel">
+		<section id="corousel" class="black text-white">
 			<div class="container">
 				<h2>My TV</h2>
-			    <slick  data="myTV" ng-if="viewLoaded" settings="slickPanels" slides-to-show="4" slides-to-scroll="1">
+			    <slick  data="myTV" ng-if="viewLoaded" settings="slickPanels" slides-to-show="6" slides-to-scroll="1">
 			      <div ng-repeat="channel in myTV" class="channel">
 			  		<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/close_red.png" class="btn1"  ng-click="removeChannel(channel, myTV)"	>
 			  		<img src="https://cdn1.iconfinder.com/data/icons/basic-ui-elements-color/700/02_play-32.png" class="btn2" ng-click="play(channel.url)">
@@ -115,7 +115,7 @@
 		<section id="corousel" >
 			<div class="container">
 				<h2>Sport Channels</h2>
-				<slick infinite="true" slides-to-show="4" slides-to-scroll="1">
+				<slick infinite="true" slides-to-show="6" slides-to-scroll="1">
 		  			<div ng-repeat="channel in sports" class="channel">
 		  				<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png" class="btn1" ng-click="addChannel(channel)">
 		  				<img src="{{channel.img}}" class="img">
@@ -126,7 +126,7 @@
 		<section id="corousel" >
 			<div class="container">
 				<h2>Mexican Channels</h2>
-				<slick infinite="true" slides-to-show="4" slides-to-scroll="1">
+				<slick infinite="true" slides-to-show="6" slides-to-scroll="1">
 		  			<div ng-repeat="channel in mexico" class="channel">
 		  				<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png" class="btn1" ng-click="addChannel(channel)">
 		  				<img src="{{channel.img}}" class="img">
@@ -137,8 +137,8 @@
 		<section id="corousel">
 			<div class="container">
 				<h2>Canales de peliculas</h2>
-		  		<!-- <slick lazy-load="ondemand" slides-to-show="4" slides-to-scroll="1"> -->
-		 		<slick infinite="true" slides-to-show="4" slides-to-scroll="1">
+		  		<!-- <slick lazy-load="ondemand" slides-to-show="6" slides-to-scroll="1"> -->
+		 		<slick infinite="true" slides-to-show="6" slides-to-scroll="1">
 			  		<div ng-repeat="channel in movies" class="channel">
 			  			<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png" class="btn1" ng-click="addChannel(channel)">
 			  			<img src="{{channel.img}}" class="img" >
@@ -208,7 +208,7 @@
 			</p>
 		</div>
 	</div>
-	<div class="firma"><p>Todos los derechos reservados  <a href="#" title="">Southboxtv</a>. </p></div>
+	<div class="firma black"><p>Todos los derechos reservados  <a href="#" title="">Southboxtv</a>. </p></div>
 </footer>
 <!-- end footer section -->
 
