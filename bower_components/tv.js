@@ -11,6 +11,29 @@ function tvcontrol($rootScope, $window, $location, $scope, $timeout, $compile, $
 
 	$rootScope.myTV=[];
 
+	$scope.prueba = [
+		{
+			"id":"prueba1",
+			"title": "TVC Latino",
+			"img": "https://static.filmon.com/assets/channels/213/big_logo.png",
+			"url": "http://cinestrenostv.tv/acanal/1.html"
+
+		},
+		{
+			"id": "prueba2",
+			"title": "EDGE sports",
+			"img": "https://static.filmon.com/assets/channels/4325/big_logo.png",
+			"url":"https://www.filmon.com/tv/channel/export?channel_id=4325&autoPlay=1"
+		},
+
+		{
+			"id": "prueba3",
+			"title": "Telenovelas TV",
+			"img": "https://static.filmon.com/assets/channels/2624/big_logo.png",
+			"url":"https://www.filmon.com/tv/channel/export?channel_id=2624&autoPlay=1"
+		}
+	];
+
 	$scope.sports = [
 		{
 			"id" 		: 	"sport-1",
