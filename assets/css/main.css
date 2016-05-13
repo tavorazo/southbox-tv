@@ -82,6 +82,8 @@ main{ min-height: 1000px;}
 #corousel .channel:hover img{ display: block;}
 #corousel slick{ padding: 15px; }
 
+.mytv .img{ background: none!important; }
+
 
 
 

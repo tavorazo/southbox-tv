@@ -100,7 +100,7 @@
 	</section>	
 
 
-		<section id="corousel" class="black text-white">
+		<section id="corousel" class="black text-white mytv">
 			<div class="container">
 				<h2 style="border-color: #000;">Mi TV</h2>
 			    <slick  data="myTV" ng-if="viewLoaded" settings="slickPanels" slides-to-show="6" slides-to-scroll="1">
