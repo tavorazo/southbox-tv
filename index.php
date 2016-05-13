@@ -116,7 +116,7 @@
 		<section id="corousel" >
 			<div class="container">
 				<h2>Free Channels</h2>
-				<slick infinite="true" slides-to-show="4" slides-to-scroll="1">
+				<slick infinite="true" slides-to-show="6" slides-to-scroll="1">
 		  			<div ng-repeat="channel in prueba" class="channel">
 		  				<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png" class="btn1" ng-click="addChannel(channel)">
 		  				<img src="{{channel.img}}" class="img">
