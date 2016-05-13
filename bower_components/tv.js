@@ -15,7 +15,7 @@ function tvcontrol($rootScope, $window, $location, $scope, $timeout, $compile, $
 		{
 			"id":"prueba1",
 			"title": "TVC Latino",
-			"img": "https://static.filmon.com/assets/channels/213/big_logo.png",
+			"img": "https://www.yiptv.com/wp-content/uploads/2015/05/live-network-tvc-latino.png",
 			"url": "http://cinestrenostv.tv/acanal/1.html"
 
 		},
@@ -58,6 +58,18 @@ function tvcontrol($rootScope, $window, $location, $scope, $timeout, $compile, $
 			"title"		: 	"ESPN 3",
 			"img"		: 	"http://tutvgratis.tv/media/uploads/2015/01/76611b29120fd8f7592098b1e0cc8a.gif",
 			"url" 		: 	"http://tutvgratis.tv/embed/tutv?chid=159"
+		},
+		{
+			"id" 		: 	"sport-5",
+			"title"		: 	"Fox Sport 2",
+			"img"		: 	"http://tutvgratis.tv/media/uploads/2015/01/03464ed3729ce34b24878862f2ba8c.gif",
+			"url" 		: 	"http://tutvgratis.tv/embed/tutv?chid=88"
+		},
+		{
+			"id" 		: 	"sport-6",
+			"title"		: 	"Fox Sport HD",
+			"img"		: 	"http://tutvgratis.tv/media/uploads/2015/01/53c1adcfae46e1ac642e303f3384ba.gif",
+			"url" 		: 	"http://tutvgratis.tv/embed/tutv?chid=47"
 		},
 		{
 			"id" 		: 	"sport-5",

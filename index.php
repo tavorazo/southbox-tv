@@ -40,13 +40,13 @@
 		</figure>
 		<div class="menu-search">
 			<input type="search" placeholder="Busca videos, canales y más...">
-			<button class="black text-white trans"> 
+			<button class="trans"> 
 			<img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-20.png">
 			</button>
 		</div>
-		<div class="menu-options black text-right">
+		<div class="menu-options text-right">
 			<ul>
-				<li><a href="#" class="btn2 trans">¡Registrate ahora!</a></li>
+				<li><a href="#" class="btn2 trans text-black">¡Registrate ahora!</a></li>
 				<li><a href="#"><img src="https://cdn4.iconfinder.com/data/icons/ubercons-web-application/512/Avatar-24.png"></a></li>
 				<li><a href="#"><img src="https://cdn4.iconfinder.com/data/icons/ubercons-web-application/512/Gear-24.png"></a></li>	
 			</ul>
@@ -56,13 +56,13 @@
 </header>
 
 <main ng-controller="tvcontrol" >
-	<section class="tv black" id="tv" >
+	<section class="tv black border-gray" id="tv" >
 		<div class="column2 left">
 			<script type='text/javascript'> width=728, height=410, channel='{{customUrl}}';</script>
-			<iframe ng-src="{{customUrl}}" height="505" width="640" scrolling="no" data-checked="true"></iframe>
+			<iframe ng-src="{{customUrl}}" height="405" width="540" scrolling="no" data-checked="true" class="border-gray"></iframe>
 		</div>
 			<div class="column2 right">
-			<table>
+			<table class="text-white">
 				<tr>
 					<th class="light-gray border-bottom">Lunes 8 de mayo</th><th class="light-gray border-bottom">11:00 a.m.</th>
 					<th class="light-gray border-bottom">12:00 p.m.</th><th class="light-gray border-bottom">13:00 p.m.</th>
@@ -102,7 +102,7 @@
 
 		<section id="corousel" class="black text-white">
 			<div class="container">
-				<h2>My TV</h2>
+				<h2 style="border-color: #000;">Mi TV</h2>
 			    <slick  data="myTV" ng-if="viewLoaded" settings="slickPanels" slides-to-show="6" slides-to-scroll="1">
 			      <div ng-repeat="channel in myTV" class="channel">
 			  		<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/close_red.png" class="btn1"  ng-click="removeChannel(channel, myTV)"	>
@@ -113,9 +113,9 @@
 			 </div>
 		</section>	
 
-		<section id="corousel" >
-			<div class="container">
-				<h2>Free Channels</h2>
+		<section id="corousel" style="margin-top: 100px;" >
+			<div class="container white">
+				<h2>Canales Gratis</h2>
 				<slick infinite="true" slides-to-show="6" slides-to-scroll="1">
 		  			<div ng-repeat="channel in prueba" class="channel">
 		  				<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png" class="btn1" ng-click="addChannel(channel)">
@@ -126,8 +126,8 @@
 		</section>	
 		
 		<section id="corousel" >
-			<div class="container">
-				<h2>Sport Channels</h2>
+			<div class="container white">
+				<h2>Canales de deportes</h2>
 				<slick infinite="true" slides-to-show="6" slides-to-scroll="1">
 		  			<div ng-repeat="channel in sports" class="channel">
 		  				<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png" class="btn1" ng-click="addChannel(channel)">
@@ -137,8 +137,8 @@
 			</div>
 		</section>	
 		<section id="corousel" >
-			<div class="container">
-				<h2>Mexican Channels</h2>
+			<div class="container white">
+				<h2>Canales Mexicanos</h2>
 				<slick infinite="true" slides-to-show="6" slides-to-scroll="1">
 		  			<div ng-repeat="channel in mexico" class="channel">
 		  				<img src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/add_green.png" class="btn1" ng-click="addChannel(channel)">
@@ -148,7 +148,7 @@
 			</div>
 		</section>	
 		<section id="corousel">
-			<div class="container">
+			<div class="container white">
 				<h2>Canales de peliculas</h2>
 		  		<!-- <slick lazy-load="ondemand" slides-to-show="6" slides-to-scroll="1"> -->
 		 		<slick infinite="true" slides-to-show="6" slides-to-scroll="1">
@@ -158,10 +158,10 @@
 			  		</div>
 				</slick>
 			</div>
+			<div style="clear: both; margin-bottom: 200px"></div>
 		</section>	
 
-
-		<section id="download" class="light-gray">
+		<section id="download" class="gray">
 			<div class="container">
 				<div class="column4"></div>
 				<div class="column4">
@@ -173,6 +173,7 @@
 				<div class="column4"></div>
 			</div>
 		</section>
+		
 
 </main>
 

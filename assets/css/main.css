@@ -1,12 +1,13 @@
 /*GENERAL*/
-body{ width:100%; left:0; margin:0; top:0; font-family: 'Open sans', 'Montserrat', 'Avenir', 'Lato', Arial !important; color:#2E2E2E; min-width: 1200px;}
+body{  left:0; margin:0; top:0; font-family: 'Open sans', 'Montserrat', 'Avenir', 'Lato', Arial !important; color:#2E2E2E;  background:#f2f2f2;
+		min-width: 1280px;width:100%; }
 header, footer, section{ width:100%;  overflow:hidden; margin-top:0; height:auto;  }
-.container{ padding:50px 0; min-height:200px; width:80%; height:auto; /*border-bottom:1px #FFf solid;*/ margin:auto; display: block;   }
+.container{margin:5px auto; min-height:200px; width:80%; height:auto; display: block;  padding:0; padding-bottom: 30px; box-shadow: 0 1px 2px rgba(0,0,0,.1);}
 .content{ position:relative; margin:auto; }
 a{ text-decoration:none; color:#fff; font-size: 13px; }
 p{ line-height:35px; letter-spacing:0px; font-size: 13px;}
 h1{ font-weight:500;   font-size:65px; margin-top:25px;letter-spacing:-2px;}
-h2{font-weight:900;}
+h2{font-weight:900; border-left:5px solid #EE5F00; padding-left: 15px;}
 span{  font-weight:600; }
 li{ list-style-type: none; }
 table {width: 100%;}
@@ -19,11 +20,12 @@ iframe{ background: #000; border: none;}
 
 /****colores****/
 .text-white{ color:white; }
+.text-black{ color:#000; }
 .white{ background-color: white ; }
 .black { background: #000!important;}
 .purple{background-color: #223845;}
-.light-gray{background-color: #EFEFEF;}
-.light-blue{background-color: #EBF2F5;}
+.light-gray{background-color: #333;}
+.light-black{background-color: #000;}
 
 /**** left/right ****/
 .text-right { text-align: right; }
@@ -34,7 +36,7 @@ iframe{ background: #000; border: none;}
 
 /**** Columnas ****/
 .column2{width: 50%; float:left;  }
-.column4{width: 14.5%; float: left; padding: 0 5%; min-height: 380px;}
+.column4{width: 14.5%; float: left; padding: 0 5%; min-height: 180px;}
 
 
 /****Botones****/
@@ -46,14 +48,15 @@ iframe{ background: #000; border: none;}
 .border-right{border-right: solid 1px #f2f2f2;}
 .border-bottom{border-bottom:solid 3px #223845;}
 .border-white{border:solid 1px #f2f2f2; border-radius: 5px;}
+.border-gray{border:solid 1px #333; border-radius: 5px;}
 
 /****Forms****/
 button{border:none; padding: 6px;}
 input {padding: 5px; }
 
 /**Header*/
-header { margin-bottom: 50px;}
-header menu {margin:  50px 0;}
+header { margin-bottom: 10px;}
+header menu {margin: 15px 0; height: 40px; box-shadow: 0 1px 2px rgba(0,0,0,.1); background: #fff}
 header menu .menu-logo{width: 10%; float:left; margin: 0 5% 0 0;}
 header menu .menu-logo img{ width: 140%; margin: -10px 0 0 -20px;}
 header menu .menu-search{width: 35%; float:left; position: relative;  margin-top: -1px;}
@@ -67,7 +70,7 @@ header menu .menu-options li{display: inline-block; padding: 0 5px;}
 main{ min-height: 1000px;}
 
 /*TV*/
-#tv {min-height: 350px;}
+#tv {min-height: 350px; padding: 10px 0; }
 #tv iframe{    min-width: 406px; min-height: 350px; padding: 0 50px;}
 
 /* corouseles */
@@ -77,6 +80,7 @@ main{ min-height: 1000px;}
 #corousel .btn1{  position:absolute; z-index: 999; max-width: 35px!important;  bottom: 15px; display: none;  cursor:pointer; left: 25px;}
 #corousel .btn2{  position:absolute; z-index: 999; max-width: 35px!important;  bottom: 15px; display: none;  cursor:pointer; left: 65px; width: 28px;}
 #corousel .channel:hover img{ display: block;}
+#corousel slick{ padding: 15px; }
 
 
 
